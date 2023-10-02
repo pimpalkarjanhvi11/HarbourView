@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    /* The image used */
+    background-image: url("images/pexels-creative-vix-370984\ \(1\).jpg");
+    /* Full height */
+    height: 100%; 
+    
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+nav{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    color: white;
+    background-color:  rgb(0, 0, 36);
+}
+.logo{
+    width: 30%;
+    height: 100px;
+    display: flex;
+}
+.logo h1{
+    margin-top: 18px;
+    margin-left: 85px;
+    font-size: 35px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: rgb(223, 154, 223);
+    display: flex;
+}
+.logo p{
+    color: white;
+    font-size: 25px;
+    margin-top: 9px;
+}
+.navbar{
+    width: 65%;
+    height: 100px;
+    margin-top: 25px;
+    margin-right: 10px;
+}
+.navbar ul{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-around;
+}
+.navbar ul li{
+    list-style: none;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px;
+    border: 1px solid #fff transparent;
+    transition: 0.6 s ease;
+}
+.navbar ul li a:hover{
+    background-color: white;
+    color: black;
+}
+.navbar ul li.active a{
+    background-color: white;
+    color: black;
+}
+.sub-sign{
+    display: none;
+}
+.navbar ul li:hover .sub-sign{
+    display: block;
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 30px;
+    background-color:  rgb(0, 0, 36);
+    opacity: 0.9;
+    width: 150px;
+    height: 140px;
+}
+.navbar ul li:hover .sub-sign ul{
+    display: block;
+    margin: 5px;
+}
+.navbar ul li:hover .sub-sign ul li{
+    width: 150px;
+    padding: 10px;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+
+.bg-text {
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+}
